@@ -1,0 +1,2560 @@
+/* Watch Your Favorite Animal Block */
+.watch-your-favorite-animal {
+  background-image: url("../../assets/images/panda.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bubble {
+  background: var(--orange-dark-gradient);
+  border-radius: 50%;
+}
+
+.watch-fav-animal-header {
+  position: absolute;
+}
+
+.watch-fav-animal-header > h2 {
+  margin: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.favorite-word {
+  color: var(--yellow);
+}
+
+/* Backstage Block */
+.backstage {
+  color: var(--darkBlue);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backstage > div {
+  display: grid;
+}
+
+.backstage > div > div:nth-child(1),
+.backstage > div > div:nth-child(2) {
+  display: flex;
+}
+
+.backstage > div > div:nth-child(1) {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.backstage > div > div:nth-child(2) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Pets Block */
+.pets,
+.pets-card-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pets {
+  flex-direction: column;
+}
+
+.pet-cards {
+  display: grid;
+}
+
+.pet-card {
+  border-radius: 5px;
+  border: 2px solid var(--orange);
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pet-card:hover {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+
+.pet-card > img {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  transition: 0.5s;
+}
+
+.pet-card-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pet-card-desc > div > h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.pet-card-desc > div > p {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* Pick And Feed A Friend Block */
+.feed-friend,
+.how-it-works,
+.how-it-works-cards,
+.how-it-works-card,
+.how-it-works-card > div {
+  display: flex;
+}
+
+.feed-friend {
+  background: var(--orangeGradient);
+  justify-content: center;
+  align-items: center;
+}
+
+.feed-friend > h2 {
+  margin: 0;
+}
+
+.feed-friend-div {
+  background: var(--frostedGlassWhite);
+  border-radius: 20px;
+}
+
+.feed-friend-div > h2 {
+  text-align: center;
+  color: rgba(254, 144, 19, 1);
+}
+
+.feed-friend-div > p:nth-of-type(1) {
+  font-weight: 500;
+}
+
+.emergency-link {
+  color: initial;
+  text-decoration-color: rgba(254, 144, 19, 1);
+  text-underline-offset: 6px;
+}
+
+.how-it-works-cards {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.how-it-works,
+.how-it-works-card {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.how-it-works-card > div {
+  background-color: var(--white);
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonials Block */
+.testimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials > h3 {
+  margin-top: 0;
+  text-align: center;
+  color: var(--darkBlue);
+}
+
+.testimonial-profiles {
+  display: grid;
+}
+
+.testimonial-profile {
+  background-image: var(--pinkGradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-profile,
+.testimonial-profile > div {
+  border-radius: 20px;
+}
+
+.testimonial-profile > div {
+  width: 98%;
+  height: 98%;
+  background-color: var(--lightGray);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-header > div > * {
+  margin: 0;
+}
+
+.profile-header > div > h5 {
+  font-weight: 300;
+  color: var(--graySmoky);
+}
+
+.profile-description > p {
+  color: var(--gray);
+  line-height: 1.13;
+}
+
+.progress-bar {
+  background-color: var(--lightGray);
+  border: 1px solid var(--orange);
+  width: 50%;
+  height: 6px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.progress {
+  border: none;
+  background-color: var(--orange);
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles For Desktop Screen Size */
+@media only screen and (min-width: 1024px) {
+  /* Page Padding */
+  .backstage,
+  .pets,
+  .feed-friend,
+  .testimonials {
+    padding: 5em 20em;
+  }
+
+  .navbar {
+    padding: 0.5em 20em;
+  }
+
+  footer {
+    padding: 2em 20em;
+  }
+
+  /* Watch Your Favorite Animal Block */
+  .watch-your-favorite-animal {
+    height: 42em;
+    padding: 1em 20em;
+  }
+
+  .bubble {
+    height: 32em;
+    width: 32em;
+    float: right;
+  }
+
+  .watch-fav-animal-header {
+    width: 33em;
+    right: 14em;
+    top: 6em;
+  }
+
+  .watch-fav-animal-header > h2 {
+    font-size: 6.8em;
+    line-height: 0.78em;
+  }
+
+  .watch-online-btn {
+    border-radius: 2em;
+    padding: 1em 4em;
+    font-size: 1em;
+    float: right;
+    position: relative;
+    left: 32em;
+    top: 35em;
+  }
+
+  /* Backstage */
+  .backstage {
+    margin-top: 2em;
+  }
+
+  .backstage > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+
+  .backstage > div > div:nth-child(1) > img {
+    width: 33em;
+    height: 23em;
+  }
+
+  .backstage > div > div:nth-child(2) > h2 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .backstage > div > div:nth-child(2) > h4 {
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+
+  .backstage > div > div:nth-child(2) > p {
+    width: 31em;
+    font-size: 1em;
+  }
+
+  .backstage-flower {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+
+  /* Pets */
+  .pet-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .pet-card:hover > img {
+    transform: scale(1.025);
+  }
+
+  .pet-card > img {
+    width: 23em;
+    height: 23em;
+  }
+
+  .pet-card-desc {
+    padding: 1em;
+  }
+
+  .pet-card-desc > div > p {
+    margin-top: 0.5em;
+  }
+
+  .pet-prev-next-button:nth-of-type(1) {
+    left: -100px;
+  }
+
+  .pet-prev-next-button:nth-of-type(2) {
+    right: -100px;
+  }
+
+  .pet-prev-next-button {
+    padding: 1.5em;
+  }
+
+  .pet-prev-next-button > img {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .choose-favorite-btn {
+    margin-top: 5em;
+    border-radius: 2em;
+    padding: 1em 4em;
+    font-size: 1em;
+  }
+
+  .pets-flower-1 {
+    left: 0;
+    bottom: 0;
+  }
+
+  .pets-flower-2 {
+    right: 0;
+    bottom: 0;
+  }
+
+  /* Pick And Feed A Friend Block */
+  .feed-friend-div {
+    width: 100%;
+    padding: 3em 6.5em;
+  }
+
+  .feed-friend-div > h2 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .feed-friend-div > h4 {
+    font-size: 1.5em;
+  }
+
+  .feed-friend-div > p {
+    line-height: 1.5;
+  }
+
+  .how-it-works > h3 {
+    font-size: 2.1em;
+    margin-bottom: 1.5em;
+  }
+
+  .how-it-works-card {
+    margin: 0 1.5em;
+  }
+
+  .how-it-works-card > div {
+    width: 10em;
+    height: 10em;
+  }
+
+  .how-it-works-card > p {
+    width: 10em;
+    margin-top: 2em;
+  }
+
+  .vector {
+    position: relative;
+    top: 4em;
+  }
+
+  .feed-friend-btn {
+    margin-top: 2.5em;
+    border-radius: 2em;
+    padding: 1em 4em;
+    font-size: 1em;
+  }
+
+  /* Testimonials Block */
+  .testimonial-profiles {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+  }
+
+  .testimonials > h3 {
+    font-size: 2.1em;
+  }
+
+  .testimonial-profile {
+    width: 18em;
+    height: 25em;
+  }
+
+  .profile-header,
+  .profile-description {
+    padding: 1em;
+  }
+
+  .profile-header {
+    padding-bottom: 0;
+  }
+
+  .profile-header > img {
+    margin-right: 0.8em;
+  }
+
+  .profile-description {
+    padding-top: 0;
+  }
+
+  .profile-description > p {
+    font-size: 0.98em;
+  }
+
+  .progress-bar {
+    margin-top: 1em;
+  }
+
+  .testimonial-btn {
+    margin-top: 2.5em;
+    border-radius: 0.3em;
+    padding: 1em 4em;
+    font-size: 1em;
+  }
+
+  .testimonial-flower {
+    right: 0;
+    bottom: -6.5em;
+  }
+
+  /* Desktop Screen Width Below 1760px */
+  @media only screen and (max-width: 1760px) {
+    /* Page Padding */
+    .backstage,
+    .pets,
+    .feed-friend,
+    .testimonials {
+      padding: 5em 15em;
+    }
+
+    .navbar {
+      padding: 0.5em 15em;
+    }
+
+    footer {
+      padding: 2em 15em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1560px */
+  @media only screen and (max-width: 1560px) {
+    /* Page Padding */
+    .backstage,
+    .pets,
+    .feed-friend,
+    .testimonials {
+      padding: 5em 12em;
+    }
+
+    .navbar {
+      padding: 0.5em 12em;
+    }
+
+    footer {
+      padding: 2em 12em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1430px */
+  @media only screen and (max-width: 1430px) {
+    /* Page Padding */
+    .backstage,
+    .pets,
+    .feed-friend,
+    .testimonials {
+      padding: 5em 10em;
+    }
+
+    .navbar {
+      padding: 0.5em 10em;
+    }
+
+    footer {
+      padding: 1.8em 10em;
+    }
+
+    /* Watch Your Favorite Animal Block */
+    .watch-your-favorite-animal {
+      padding: 1em 10em;
+    }
+
+    .watch-fav-animal-header {
+      right: 4em;
+    }
+
+    /* Backstage */
+    .backstage {
+      margin-top: 2em;
+    }
+
+    .backstage > div > div:nth-child(1) > img {
+      width: 31em;
+      height: 23em;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      width: 10em;
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      width: 10em;
+      font-size: 1.3em;
+      margin: 1em 0;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      width: 28em;
+      font-size: 1em;
+    }
+
+    /* Pets */
+    .pet-cards {
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+    }
+
+    .pet-card > img {
+      width: 20em;
+      height: 20em;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .feed-friend-div {
+      padding: 3em 6em;
+    }
+
+    /* Testimonials Block */
+    .testimonial-profile {
+      width: 16em;
+      height: 23em;
+    }
+    .profile-description > p {
+      font-size: 0.88em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1340px */
+  @media only screen and (max-width: 1340px) {
+    /* Watch Your Favorite Animal Block */
+    .bubble {
+      height: 30em;
+      width: 30em;
+    }
+
+    .watch-fav-animal-header > h2 {
+      font-size: 6.4em;
+    }
+
+    .watch-online-btn {
+      padding: 0.9em 3em;
+      font-size: 0.85em;
+      left: 35em;
+      top: 39em;
+    }
+
+    /* Backstage */
+    .backstage {
+      margin-top: 2em;
+    }
+
+    .backstage > div > div:nth-child(1) > img {
+      width: 29em;
+      height: 21em;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 2.2em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 1.1em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.9em;
+    }
+
+    .backstage-flower {
+      top: -3em;
+    }
+
+    /* Pets */
+    .pet-cards {
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
+    }
+
+    .pet-card:hover > img {
+      transform: scale(1.025);
+    }
+
+    .pet-card > img {
+      width: 19em;
+      height: 19em;
+    }
+
+    .pet-card-desc {
+      padding: 0.9em;
+    }
+
+    .pet-card-desc > div > h4 {
+      font-size: 0.9em;
+    }
+
+    .pet-card-desc > div > p {
+      margin-top: 0.2em;
+      font-size: 0.9em;
+    }
+
+    .pet-prev-next-button {
+      padding: 1.3em;
+    }
+
+    .pet-prev-next-button > img {
+      width: 1.3em;
+      height: 1.3em;
+    }
+
+    .choose-favorite-btn {
+      padding: 0.9em 3em;
+      font-size: 0.9em;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .feed-friend-div {
+      padding: 3em 5.5em;
+    }
+
+    .feed-friend-div > h2 {
+      font-size: 2em;
+      margin-top: 0;
+      margin-bottom: 0em;
+    }
+
+    .feed-friend-div > h4 {
+      font-size: 1.3em;
+    }
+
+    .feed-friend-div > p {
+      line-height: 1.2;
+      font-size: 0.9em;
+    }
+
+    .how-it-works > h3 {
+      font-size: 1.6em;
+      margin-bottom: 1.3em;
+    }
+
+    .how-it-works-card {
+      margin: 0 1em;
+    }
+
+    .how-it-works-card > div {
+      width: 8em;
+      height: 8em;
+    }
+
+    .how-it-works-card > p {
+      width: 8.5em;
+      margin-top: 1em;
+      font-size: 0.8em;
+    }
+
+    .vector {
+      top: 3em;
+    }
+
+    .feed-friend-btn {
+      margin-top: 1.8em;
+      padding: 0.9em 3em;
+      font-size: 0.9em;
+    }
+
+    /* Testimonials Block */
+    .testimonials > h3 {
+      font-size: 1.9em;
+    }
+
+    .testimonial-profile {
+      width: 15em;
+      height: 22em;
+    }
+
+    .profile-header,
+    .profile-description {
+      padding: 0.5em 1em;
+    }
+
+    .profile-description > p {
+      font-size: 0.8em;
+    }
+
+    .testimonial-btn {
+      margin-top: 2em;
+      padding: 0.9em 3em;
+      font-size: 0.9em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1235px */
+  @media only screen and (max-width: 1235px) {
+    /* Backstage */
+    .backstage {
+      margin-top: 2em;
+    }
+
+    .backstage > div > div:nth-child(1) > img {
+      width: 27em;
+      height: 19em;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 1.8em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 0.9em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.8em;
+    }
+
+    /* Pets */
+    .pet-card > img {
+      width: 17em;
+      height: 17em;
+    }
+
+    .pet-prev-next-button {
+      padding: 1.1em;
+    }
+
+    /* Testimonials Block */
+    .testimonials > h3 {
+      font-size: 1.8em;
+    }
+
+    .testimonial-profile {
+      width: 14em;
+      height: 21em;
+    }
+
+    .profile-header {
+      padding: 0.5em 1em 0 1em;
+    }
+
+    .profile-header > div > h4 {
+      font-size: 0.9em;
+    }
+
+    .profile-header > div > h5 {
+      font-size: 0.8em;
+    }
+
+    .profile-description {
+      padding: 0 1em;
+    }
+
+    .profile-description > p {
+      font-size: 0.76em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1161px */
+  @media only screen and (max-width: 1161px) {
+    /* Backstage */
+    .backstage-flower {
+      width: 9em;
+      top: 1em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1116px */
+  @media only screen and (max-width: 1116px) {
+    /* Page Padding */
+    .backstage,
+    .pets,
+    .feed-friend,
+    .testimonials {
+      padding: 4em 7em;
+    }
+
+    .navbar {
+      padding: 0.5em 7em;
+    }
+
+    footer {
+      padding: 1.8em 7em;
+    }
+
+    /* Watch Your Favorite Animal Block */
+    .watch-your-favorite-animal {
+      height: 38em;
+      padding: 1em 7em;
+    }
+
+    .bubble {
+      height: 28em;
+      width: 28em;
+    }
+
+    .watch-fav-animal-header {
+      width: 33em;
+      right: 2em;
+      top: 5em;
+    }
+
+    .watch-fav-animal-header > h2 {
+      font-size: 6em;
+    }
+
+    .watch-online-btn {
+      padding: 0.9em 3em;
+      font-size: 0.85em;
+      left: 35em;
+      top: 36em;
+    }
+
+    /* Backstage */
+    .backstage {
+      margin-top: 0em;
+    }
+
+    .backstage-flower {
+      width: 9em;
+      top: 0;
+    }
+
+    .backstage > div > div:nth-child(1) > img {
+      width: 23em;
+      height: 15em;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 1.5em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 0.85em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.75em;
+    }
+
+    /* Pets */
+    .pet-card > img {
+      width: 100%;
+      height: 15em;
+    }
+
+    .pet-card-desc {
+      padding: 0.8em;
+    }
+
+    .pet-card-desc h4 {
+      font-size: 0.85em !important;
+    }
+
+    .choose-favorite-btn {
+      margin-top: 2em;
+    }
+
+    .pet-prev-next-button {
+      padding: 1.1em;
+    }
+
+    .pet-prev-next-button:nth-of-type(1) {
+      left: -70px;
+    }
+
+    .pet-prev-next-button:nth-of-type(2) {
+      right: -70px;
+    }
+
+    /* Testimonials Block */
+    .testimonials > h3 {
+      font-size: 1.8em;
+    }
+
+    .testimonial-profile {
+      width: 13em;
+      height: 19em;
+    }
+
+    .profile-header {
+      padding: 0.5em 1em 0 1em;
+    }
+
+    .profile-header > div > h4 {
+      font-size: 0.8em;
+    }
+
+    .profile-header > div > h5 {
+      font-size: 0.7em;
+    }
+
+    .profile-description {
+      padding: 0 1em;
+    }
+
+    .profile-description > p {
+      font-size: 0.7em;
+    }
+  }
+}
+
+/* Styles For Tablet Screen Size */
+@media only screen and (max-width: 1024px) {
+  /* Page Padding */
+  .backstage,
+  .feed-friend,
+  .testimonials {
+    padding: 3em 4em;
+  }
+
+  .navbar {
+    padding: 0.5em 4em;
+  }
+
+  footer {
+    padding: 1.8em 4em;
+  }
+
+  .pets {
+    padding: 3em 4em 8em;
+  }
+
+  /* Watch Your Favorite Animal Block */
+  .watch-your-favorite-animal {
+    height: 32em;
+    padding: 1em 5em;
+  }
+
+  .bubble {
+    height: 25em;
+    width: 25em;
+    float: right;
+  }
+
+  .watch-fav-animal-header {
+    width: 25em;
+    right: 3em;
+    top: 5em;
+  }
+
+  .watch-fav-animal-header > h2 {
+    font-size: 5em;
+    line-height: 0.78em;
+  }
+
+  .watch-online-btn {
+    border-radius: 2em;
+    float: right;
+    position: relative;
+    padding: 0.85em 2.8em;
+    font-size: 0.8em;
+    left: 30em;
+    top: 34em;
+  }
+
+  /* Backstage */
+  .backstage > div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+
+  .backstage > div > div:nth-child(1) > img {
+    width: 23em;
+    height: 16em;
+  }
+
+  .backstage > div > div:nth-child(2) > h2 {
+    font-size: 1.5em;
+    width: 10em;
+  }
+
+  .backstage > div > div:nth-child(2) > h4 {
+    font-size: 0.85em;
+    width: 10em;
+  }
+
+  .backstage > div > div:nth-child(2) > p {
+    font-size: 0.75em;
+    width: 25em;
+  }
+
+  .backstage-flower {
+    width: 9em;
+    top: 0;
+    right: 0;
+  }
+
+  /* Pets */
+  .pet-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .pet-card {
+    width: 14.5em;
+  }
+
+  .pet-card:hover > img {
+    transform: scale(1.025);
+  }
+
+  .pet-card > img {
+    width: 100%;
+    height: 15em;
+  }
+
+  .pet-card-desc {
+    padding: 0.5em;
+  }
+
+  .pet-card-desc h4 {
+    font-size: 0.7em !important;
+  }
+
+  .pet-card-desc > div > p {
+    margin-top: 0.5em;
+    font-size: 0.7em;
+  }
+
+  .pet-card-desc > img {
+    width: 2em;
+    height: 2em;
+  }
+
+  .pet-prev-next-button:nth-of-type(1) {
+    left: -70px;
+  }
+
+  .pet-prev-next-button:nth-of-type(2) {
+    right: -70px;
+  }
+
+  .pet-prev-next-button {
+    padding: 0.9em;
+  }
+
+  .pet-prev-next-button > img {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  .choose-favorite-btn {
+    margin-top: 2em;
+    border-radius: 2em;
+    padding: 0.85em 2.8em;
+    font-size: 0.8em;
+  }
+
+  .pets-flower-1 {
+    width: 10em;
+    left: 0;
+    bottom: 0;
+  }
+
+  .pets-flower-2 {
+    width: 15em;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* Pick And Feed A Friend Block */
+  .feed-friend-div {
+    width: 100%;
+    padding: 3em 5em;
+  }
+
+  .feed-friend-div > h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 0em;
+  }
+
+  .feed-friend-div > h4 {
+    font-size: 1.1em;
+  }
+
+  .feed-friend-div > p {
+    line-height: 1.2;
+    font-size: 0.85em;
+  }
+
+  .how-it-works > h3 {
+    font-size: 1.3em;
+    margin-bottom: 1.3em;
+  }
+
+  .how-it-works-card {
+    margin: 0 1em;
+  }
+
+  .how-it-works-card > div {
+    width: 6.5em;
+    height: 6.5em;
+  }
+
+  .how-it-works-card > div > img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .how-it-works-card > p {
+    width: 6.5em;
+    margin-top: 1em;
+    font-size: 0.7em;
+  }
+
+  .vector {
+    position: relative;
+    top: 2em;
+  }
+
+  .feed-friend-btn {
+    border-radius: 2em;
+    margin-top: 1.2em;
+    padding: 0.8em 2.8em;
+    font-size: 0.8em;
+  }
+
+  /* Testimonials Block */
+  .testimonial-profiles {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+
+  .testimonials > h3 {
+    font-size: 1.5em;
+  }
+
+  .testimonial-profile:nth-of-type(1) {
+    display: none;
+  }
+
+  .testimonial-profile {
+    width: 15em;
+    height: 20em;
+  }
+
+  .profile-description {
+    padding: 0 0.8em;
+  }
+
+  .profile-description > p {
+    font-size: 0.8em;
+  }
+
+  .profile-header {
+    padding: 0.5em 1em 0 1em;
+  }
+
+  .profile-header > div > h4 {
+    font-size: 0.8em;
+  }
+
+  .profile-header > div > h5 {
+    font-size: 0.6em;
+  }
+
+  .profile-header > img {
+    margin-right: 0.8em;
+    width: 1.8em;
+    height: 1.8em;
+  }
+
+  .progress-bar {
+    margin-top: 1em;
+    height: 5px;
+  }
+
+  .testimonial-btn {
+    border-radius: 0.3em;
+    margin-top: 2em;
+    padding: 0.85em 2.8em;
+    font-size: 0.8em;
+  }
+
+  .testimonial-flower {
+    width: 12em;
+    right: 0;
+    bottom: -5em;
+  }
+
+  /* Tablet Screen Width Below 1000px */
+  @media only screen and (max-width: 1000px) {
+    /* Backstage */
+    .backstage-flower {
+      display: none;
+    }
+
+    /* Pets */
+    .pet-cards {
+      grid-column-gap: 20px;
+      grid-row-gap: 70px;
+    }
+
+    .pet-prev-next-button:nth-of-type(1) {
+      left: 250px;
+    }
+
+    .pet-prev-next-button:nth-of-type(2) {
+      right: 250px;
+    }
+  }
+
+  /* Tablet Screen Width Below 890px */
+  @media only screen and (max-width: 890px) {
+    /* Watch Your Favorite Animal Block */
+    .watch-your-favorite-animal {
+      height: 30em;
+      padding: 1em 5em;
+    }
+
+    .bubble {
+      height: 23em;
+      width: 23em;
+    }
+
+    .watch-fav-animal-header {
+      width: 23em;
+      right: 2em;
+      top: 4.5em;
+    }
+
+    .watch-fav-animal-header > h2 {
+      font-size: 4.7em;
+      line-height: 0.78em;
+    }
+
+    .watch-online-btn {
+      left: 28em;
+      top: 31em;
+    }
+
+    /* Pets */
+    .pets-flower-1 {
+      width: 8em;
+    }
+
+    /* Testimonials Block */
+    .testimonial-flower {
+      width: 8.5em;
+      bottom: -4em;
+    }
+  }
+
+  /* Tablet Screen Width Below 800px */
+  @media only screen and (max-width: 800px) {
+    /* Page Padding */
+    .backstage,
+    .feed-friend,
+    .testimonials {
+      padding: 3em 2em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    footer {
+      padding: 1.8em 2em;
+    }
+
+    .pets {
+      padding: 3em 2em 8em;
+    }
+
+    /* Backstage */
+    .backstage > div > div:nth-child(1) > img {
+      width: 21em;
+      height: 14em;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 1.2em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 0.8em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.67em;
+      width: 22em;
+    }
+
+    .backstage > div > div > * {
+      margin: 0.5em 0 !important;
+    }
+
+    /* Pets */
+    .pet-card {
+      width: 13.5em;
+    }
+
+    .pet-card > img {
+      height: 14em;
+    }
+
+    /* Testimonials Block */
+    .testimonial-profile {
+      width: 14em;
+      height: 20em;
+    }
+
+    .profile-description > p {
+      font-size: 0.78em;
+    }
+  }
+
+  /* Tablet Screen Width Below 730px */
+  @media only screen and (max-width: 730px) {
+    /* Page Padding */
+    .backstage,
+    .testimonials {
+      padding: 3em 2em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    footer {
+      padding: 1.8em 2em;
+    }
+
+    .pets {
+      padding: 3em 6em 8em;
+    }
+
+    .feed-friend {
+      padding: 3em 6em;
+    }
+
+    /* Watch Your Favorite Animal Block */
+    .watch-your-favorite-animal {
+      height: 25em;
+      padding: 1em 4em;
+    }
+
+    .bubble {
+      height: 20em;
+      width: 20em;
+    }
+
+    .watch-fav-animal-header {
+      width: 20em;
+      right: 2.5em;
+      top: 4.5em;
+    }
+
+    .watch-fav-animal-header > h2 {
+      font-size: 4em;
+      line-height: 0.78em;
+    }
+
+    .watch-online-btn {
+      left: 25em;
+      top: 27em;
+    }
+
+    /* Backstage */
+    .backstage > div > div:nth-child(1) > img {
+      width: 19em;
+      height: 12em;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 1.2em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 0.8em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.67em;
+      width: 22em;
+    }
+
+    .backstage > div > div > * {
+      margin: 0.5em 0 !important;
+    }
+
+    /* Pets */
+    .pet-card {
+      width: 12em;
+    }
+
+    .pet-card > img {
+      height: 12em;
+    }
+
+    .pet-card-desc h4 {
+      font-size: 0.6em !important;
+    }
+
+    .pet-card-desc > div > p {
+      margin-top: 0.3em;
+      font-size: 0.6em;
+    }
+
+    .pet-prev-next-button {
+      padding: 0.85em;
+    }
+
+    .pet-prev-next-button > img {
+      width: 1em;
+      height: 1em;
+    }
+
+    .pet-prev-next-button:nth-of-type(1) {
+      left: 220px;
+    }
+
+    .pet-prev-next-button:nth-of-type(2) {
+      right: 220px;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .feed-friend-div {
+      width: 100%;
+      padding: 3em 4em;
+    }
+
+    .feed-friend-div > h2 {
+      font-size: 1.4em;
+      margin-top: 0;
+      margin-bottom: 0em;
+    }
+
+    .feed-friend-div > h4 {
+      font-size: 1em;
+    }
+
+    .feed-friend-div > p {
+      line-height: 1.2;
+      font-size: 0.8em;
+    }
+
+    .how-it-works > h3 {
+      font-size: 1.3em;
+      margin-bottom: 1.3em;
+    }
+
+    /* Testimonials Block */
+    .testimonial-profile {
+      width: 12em;
+      height: 17em;
+    }
+
+    .profile-description > p {
+      font-size: 0.65em;
+    }
+  }
+
+  /* Tablet Screen Width Below 680px */
+  @media only screen and (max-width: 680px) {
+    /* Page Padding */
+    .backstage,
+    .testimonials {
+      padding: 2em 5em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    .open-burger-list {
+      padding: 1em 2em;
+    }
+
+    footer {
+      padding: 1.5em 2em;
+    }
+
+    .pets {
+      padding: 2em 6em 8em;
+    }
+
+    .feed-friend {
+      padding: 2em 0;
+    }
+
+    /* Watch Your Favorite Animal Block */
+    .watch-your-favorite-animal {
+      height: 23em;
+      padding: 1em 4em;
+    }
+
+    .bubble {
+      height: 18em;
+      width: 18em;
+    }
+
+    .watch-fav-animal-header {
+      width: 18em;
+      right: 2em;
+      top: 4em;
+    }
+
+    .watch-fav-animal-header > h2 {
+      font-size: 3.5em;
+    }
+
+    .watch-online-btn {
+      padding: 0.9em 2.8em;
+      float: left;
+      font-size: 0.65em;
+      left: 0em;
+      top: 30em;
+    }
+
+    /* Backstage */
+    .backstage {
+      margin-top: 0em;
+      justify-content: flex-start;
+    }
+
+    .backstage > div {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+
+    .backstage > div > div:nth-child(1) > img {
+      display: none;
+    }
+
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 1.5em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 1em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.8em;
+      width: 25em;
+    }
+
+    .backstage-flower {
+      display: block;
+      width: 7em;
+      top: -0.7em;
+      right: 0;
+    }
+
+    /* Pets */
+    .pet-cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 60px;
+    }
+
+    .pet-card {
+      width: 13em;
+      border-width: 1px;
+    }
+
+    .pet-card:nth-of-type(3),
+    .pet-card:nth-of-type(4) {
+      display: none;
+    }
+
+    .pet-card:hover > img {
+      transform: scale(1.025);
+    }
+
+    .pet-card > img {
+      width: 100%;
+      height: 13em;
+    }
+
+    .pet-card-desc {
+      padding: 0.5em;
+    }
+
+    .pet-card-desc h4 {
+      font-size: 0.6em !important;
+    }
+
+    .pet-card-desc > div > p {
+      margin-top: 0.3em;
+      font-size: 0.6em;
+    }
+
+    .pet-card-desc > img {
+      width: 1.8em;
+      height: 1.8em;
+    }
+
+    .pet-prev-next-button:nth-of-type(1) {
+      left: 160px;
+    }
+
+    .pet-prev-next-button:nth-of-type(2) {
+      right: 160px;
+    }
+
+    .pet-prev-next-button {
+      padding: 1em;
+    }
+
+    .pet-prev-next-button > img {
+      width: 1em;
+      height: 1em;
+    }
+
+    .choose-favorite-btn {
+      margin-top: 2em;
+      border-radius: 2em;
+      padding: 0.9em 2.8em;
+      font-size: 0.7em;
+    }
+
+    .pets-flower-1 {
+      width: 9em;
+      left: 0;
+      bottom: 0;
+    }
+
+    .pets-flower-2 {
+      width: 13em;
+      right: 0;
+      bottom: 0;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .feed-friend-div {
+      width: 70%;
+      padding: 2em 5em;
+    }
+
+    .feed-friend-div > * {
+      width: 100%;
+    }
+
+    .feed-friend-div > h2 {
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 0em;
+    }
+
+    .feed-friend-div > h4 {
+      font-size: 1em;
+    }
+
+    .feed-friend-div > p {
+      line-height: 1.1;
+      font-size: 0.8em;
+    }
+
+    .how-it-works > h3 {
+      font-size: 1.2em;
+      margin-bottom: 1.3em;
+    }
+
+    .how-it-works-card {
+      margin: 0 !important;
+    }
+
+    .how-it-works-card > div {
+      width: 6em;
+      height: 6em;
+    }
+
+    .how-it-works-card > div > img {
+      width: 75%;
+      height: 75%;
+    }
+
+    .how-it-works-card > p {
+      width: 10em;
+      text-align: center;
+      margin-top: 1em;
+      font-size: 0.65em;
+    }
+
+    .vector {
+      content: url("../../assets/icons/vector-green.svg");
+      position: relative;
+      width: 5em;
+      top: -1em;
+    }
+
+    .feed-friend-btn {
+      border-radius: 2em;
+      margin-top: 1em;
+      padding: 0.9em 2.8em;
+      font-size: 0.7em;
+    }
+
+    /* Testimonials Block */
+    .testimonial-profiles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .testimonials > h3 {
+      font-size: 1.3em;
+    }
+
+    .testimonial-profile:nth-of-type(1) {
+      display: none;
+    }
+
+    .testimonial-profile {
+      width: 100%;
+      height: 7.7em;
+      margin-bottom: 0.5em;
+    }
+
+    .testimonial-profile > div {
+      height: 98%;
+      width: 99%;
+    }
+
+    .profile-description {
+      padding: 0 1em;
+    }
+
+    .profile-description > p {
+      font-size: 1.5vw;
+    }
+
+    .profile-header {
+      padding: 0.5em 1em 0 1em;
+    }
+
+    .profile-header > div > h4 {
+      font-size: 0.8em;
+    }
+
+    .profile-header > div > h5 {
+      font-size: 0.6em;
+    }
+
+    .profile-header > img {
+      margin-right: 0.8em;
+      width: 1.8em;
+      height: 1.8em;
+    }
+
+    .progress-bar {
+      display: none;
+    }
+
+    .testimonial-btn {
+      border-radius: 0.3em;
+      margin-top: 1.5em;
+      padding: 0.9em 2.8em;
+      font-size: 0.7em;
+    }
+
+    .testimonial-flower {
+      width: 8em;
+      right: 0;
+      bottom: -3em;
+    }
+
+    /* Tablet Screen Width Below 600px */
+    @media only screen and (max-width: 600px) {
+      /* Page Padding */
+      .backstage,
+      .testimonials {
+        padding: 2em 3em;
+      }
+
+      .navbar {
+        padding: 0.5em 2em;
+      }
+
+      .open-burger-list {
+        padding: 1em 2em;
+      }
+
+      footer {
+        padding: 1.5em 2em;
+      }
+
+      .pets {
+        padding: 2em 4em 8em;
+      }
+
+      .feed-friend {
+        padding: 2em 0;
+      }
+
+      /* Watch Your Favorite Animal Block */
+      .watch-your-favorite-animal {
+        height: 17em;
+        padding: 1em 3em;
+      }
+
+      .bubble {
+        height: 13em;
+        width: 13em;
+      }
+
+      .watch-fav-animal-header {
+        width: 13em;
+        right: 1.8em;
+        top: 3.5em;
+      }
+
+      .watch-fav-animal-header > h2 {
+        font-size: 2.5em;
+      }
+
+      .watch-online-btn {
+        top: 22em;
+      }
+
+      /* Pick And Feed A Friend Block */
+      .feed-friend-div {
+        width: 80%;
+        padding: 2em 3em;
+      }
+
+      /* Testimonials Block */
+      .profile-description > p {
+        font-size: 1.55vw;
+      }
+    }
+
+    /* Tablet Screen Width Below 505px */
+    @media only screen and (max-width: 505px) {
+      /* Page Padding */
+      .backstage,
+      .testimonials {
+        padding: 2em 1em;
+      }
+
+      .navbar {
+        padding: 0.5em 1em;
+      }
+
+      .open-burger-list {
+        padding: 1em;
+      }
+
+      footer {
+        padding: 1.3em 1em;
+      }
+
+      .pets {
+        padding: 2em 1em 8em;
+      }
+
+      .feed-friend {
+        padding: 2em 0;
+      }
+
+      /* Pick And Feed A Friend Block */
+      .feed-friend-div {
+        width: 90%;
+        padding: 2em 1em;
+      }
+
+      .feed-friend-div > h2 {
+        font-size: 1.2em;
+      }
+
+      .feed-friend-div > h4 {
+        font-size: 0.85em;
+      }
+
+      .feed-friend-div > p {
+        font-size: 0.7em;
+      }
+
+      .how-it-works > h3 {
+        font-size: 1.1em;
+        margin-bottom: 1.2em;
+      }
+
+      .how-it-works-card > div {
+        width: 17vw;
+        height: 5em;
+      }
+
+      .how-it-works-card > p {
+        font-size: 0.6em;
+      }
+
+      /* Testimonials */
+      .profile-description > p {
+        font-size: 1.8vw;
+      }
+    }
+
+    /* Tablet Screen Width Below 460px */
+    @media only screen and (max-width: 460px) {
+      /* Watch Your Favorite Animal Block */
+      .watch-your-favorite-animal {
+        height: 15em;
+        padding: 1em 3em;
+      }
+
+      .bubble {
+        height: 11em;
+        width: 11em;
+      }
+
+      .watch-fav-animal-header {
+        width: 12em;
+        right: 1em;
+        top: 3.5em;
+      }
+
+      .watch-fav-animal-header > h2 {
+        font-size: 2.2em;
+      }
+
+      .watch-online-btn {
+        top: 22em;
+        font-size: 0.55em;
+      }
+
+      /* Backstage */
+      .backstage > div > div:nth-child(2) > h2 {
+        font-size: 1.3em;
+        width: 10em;
+      }
+
+      .backstage > div > div:nth-child(2) > h4 {
+        font-size: 0.9em;
+        width: 10em;
+      }
+
+      .backstage > div > div:nth-child(2) > p {
+        font-size: 0.75em;
+        width: 25em;
+      }
+
+      .backstage-flower {
+        display: block;
+        width: 6.5em;
+        top: -0.7em;
+        right: 0;
+      }
+
+      /* Pets */
+      .pet-card {
+        width: 12em;
+      }
+
+      .pet-card > img {
+        height: 12em;
+      }
+
+      .pet-prev-next-button:nth-of-type(1) {
+        left: 140px;
+      }
+
+      .pet-prev-next-button:nth-of-type(2) {
+        right: 140px;
+      }
+
+      .pet-prev-next-button {
+        padding: 0.8em;
+      }
+
+      .choose-favorite-btn {
+        font-size: 0.65em;
+      }
+
+      .pets-flower-1 {
+        width: 7em;
+      }
+
+      .pets-flower-2 {
+        width: 11em;
+      }
+
+      /* Pick And Feed A Friend Block */
+      .feed-friend-div {
+        width: 80%;
+        padding: 2em;
+      }
+
+      .feed-friend-div > h2 {
+        font-size: 1em;
+      }
+
+      .feed-friend-div > h4 {
+        font-size: 0.75em;
+      }
+
+      .feed-friend-div > p {
+        font-size: 0.65em;
+      }
+
+      .how-it-works > h3 {
+        font-size: 1em;
+      }
+
+      .how-it-works-card > div {
+        width: 4em;
+        height: 4em;
+      }
+
+      .how-it-works-card > p {
+        width: 8em;
+        margin-top: 1em;
+        font-size: 0.6em;
+      }
+
+      .vector {
+        width: 3em;
+        top: -1em;
+      }
+
+      .feed-friend-btn {
+        padding: 0.9em 2.8em;
+        font-size: 0.65em;
+      }
+
+      /* Testimonials Block */
+      .testimonials > h3 {
+        font-size: 1em;
+      }
+
+      .testimonial-profile:nth-of-type(1) {
+        display: none;
+      }
+
+      .testimonial-profile {
+        width: 100%;
+        height: 6.5em;
+        margin-bottom: 0.5em;
+        border-radius: 0.8em;
+      }
+
+      .testimonial-profile > div {
+        height: 98%;
+        width: 99%;
+        border-radius: 0.8em;
+      }
+
+      .profile-description {
+        padding: 0 0.5em;
+      }
+
+      .profile-description > p {
+        font-size: 1.75vw;
+      }
+
+      .profile-header {
+        padding: 0.5em 0.5em 0 0.5em;
+      }
+
+      .profile-header > div > h4 {
+        font-size: 0.7em;
+      }
+
+      .profile-header > div > h5 {
+        font-size: 0.5em;
+      }
+
+      .profile-header > img {
+        margin-right: 0.5em;
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      .testimonial-btn {
+        padding: 0.9em 2.8em;
+        font-size: 0.65em;
+      }
+
+      .testimonial-flower {
+        width: 5em;
+        right: 0;
+        bottom: -2.5em;
+      }
+    }
+  }
+}
+
+/* Styles For Mobile Screen Size */
+@media only screen and (max-width: 425px) {
+  /* Page Padding */
+  .backstage,
+  .testimonials {
+    padding: 1em;
+  }
+
+  .navbar {
+    padding: 0.5em 2em;
+  }
+
+  .open-burger-list {
+    padding: 1em;
+  }
+
+  footer {
+    padding: 1.5em 1em;
+  }
+
+  .pets {
+    padding: 2em 4em 6em;
+  }
+
+  .feed-friend {
+    padding: 2em 0;
+  }
+
+  /* Watch Your Favorite Animal Block */
+  .watch-your-favorite-animal {
+    height: 14em;
+    padding: 1em 2em;
+  }
+
+  .bubble {
+    height: 11em;
+    width: 11em;
+  }
+
+  .watch-fav-animal-header {
+    width: 12em;
+    right: 0.5em;
+    top: 3.5em;
+  }
+
+  .watch-fav-animal-header > h2 {
+    font-size: 2.2em;
+  }
+
+  .watch-online-btn {
+    top: 21em;
+    left: 0em;
+    float: left;
+    font-size: 0.55em;
+    padding: 0.9em 2.8em;
+  }
+
+  /* Backstage */
+  .backstage {
+    margin-top: 0em;
+    justify-content: center;
+  }
+
+  .backstage > div {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .backstage > div > div:nth-child(1) > img {
+    display: none;
+  }
+
+  .backstage > div > div:nth-child(2) > h2 {
+    font-size: 1.2em;
+    width: 15em;
+  }
+
+  .backstage > div > div:nth-child(2) > h4 {
+    font-size: 0.9em;
+    width: 10em;
+  }
+
+  .backstage > div > div:nth-child(2) > p {
+    font-size: 0.75em;
+    width: 25em;
+  }
+
+  .backstage-flower {
+    display: block;
+    width: 4em;
+    top: 2em;
+    right: 0;
+  }
+
+  /* Pets */
+  .pet-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
+
+  .pet-card {
+    width: 15em;
+    border-width: 1px;
+  }
+
+  .pet-card:nth-of-type(3),
+  .pet-card:nth-of-type(4) {
+    display: none;
+  }
+
+  .pet-card:hover > img {
+    transform: scale(1.025);
+  }
+
+  .pet-card > img {
+    width: 100%;
+    height: 15em;
+  }
+
+  .pet-card-desc {
+    padding: 0.5em;
+  }
+
+  .pet-card-desc h4 {
+    font-size: 0.7em !important;
+  }
+
+  .pet-card-desc > div > p {
+    margin-top: 0.3em;
+    font-size: 0.7em;
+  }
+
+  .pet-card-desc > img {
+    width: 2em;
+    height: 2em;
+  }
+
+  .pet-prev-next-button {
+    display: none;
+  }
+
+  .choose-favorite-btn {
+    margin-top: 2em;
+    border-radius: 2em;
+    padding: 0.9em 2.8em;
+    font-size: 0.65em;
+  }
+
+  .pets-flower-1 {
+    width: 6em;
+  }
+
+  .pets-flower-2 {
+    width: 10em;
+  }
+
+  /* Pick And Feed A Friend Block */
+  .feed-friend-div {
+    width: 80%;
+    padding: 2em;
+  }
+
+  .feed-friend-div > * {
+    width: 100%;
+  }
+
+  .feed-friend-div > h2 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0em;
+  }
+
+  .feed-friend-div > h4 {
+    font-size: 0.75em;
+  }
+
+  .feed-friend-div > p {
+    line-height: 1.1;
+    font-size: 0.65em;
+  }
+
+  .how-it-works > h3 {
+    font-size: 1em;
+    margin-bottom: 1.3em;
+  }
+
+  .how-it-works-cards {
+    flex-direction: column;
+  }
+
+  .how-it-works-card {
+    margin: 0 !important;
+  }
+
+  .how-it-works-card > div {
+    width: 6em;
+    height: 6em;
+  }
+
+  .how-it-works-card > div > img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .how-it-works-card > p {
+    text-align: center;
+    width: 10em;
+    margin-top: 1em;
+    font-size: 0.6em;
+  }
+
+  .vector {
+    content: url("../../assets/icons/vector-green.svg");
+    position: relative;
+    width: 4em;
+    bottom: 2em;
+    left: 5em;
+    transform: rotate(90deg);
+  }
+
+  .feed-friend-btn {
+    border-radius: 2em;
+    margin-top: 1em;
+    padding: 0.9em 2.8em;
+    font-size: 0.65em;
+  }
+
+  /* Testimonials Block */
+  .testimonial-profiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonials > h3 {
+    font-size: 1em;
+  }
+
+  .testimonial-profile:nth-of-type(1) {
+    display: none;
+  }
+
+  .testimonial-profile {
+    width: 100%;
+    height: 6em;
+    margin-bottom: 0.5em;
+    border-radius: 0.8em;
+  }
+
+  .testimonial-profile > div {
+    height: 98%;
+    width: 99%;
+    border-radius: 0.8em;
+  }
+
+  .profile-description {
+    padding: 0 0.5em;
+  }
+
+  .profile-description > p {
+    font-size: 1.8vw;
+  }
+
+  .profile-header {
+    padding: 0.5em 0.5em 0 0.5em;
+  }
+
+  .profile-header > div > h4 {
+    font-size: 0.7em;
+  }
+
+  .profile-header > div > h5 {
+    font-size: 0.5em;
+  }
+
+  .profile-header > img {
+    margin-right: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .testimonial-btn {
+    padding: 0.9em 2.8em;
+    font-size: 0.65em;
+  }
+
+  .testimonial-flower {
+    width: 3em;
+    right: 0;
+    bottom: -1em;
+  }
+
+  /* Mobile Screen Width Below 365px */
+  @media only screen and (max-width: 365px) {
+    /* Watch Your Favorite Animal Block */
+    .bubble {
+      height: 9em;
+      width: 9em;
+    }
+
+    .watch-fav-animal-header {
+      width: 10em;
+      right: 0.5em;
+      top: 2.8em;
+    }
+
+    .watch-fav-animal-header > h2 {
+      font-size: 1.8em;
+    }
+
+    .watch-online-btn {
+      top: 23em;
+      left: 0em;
+      padding: 0.85em 2.5em;
+      font-size: 0.5em;
+    }
+
+    /* Backstage */
+    .backstage > div > div:nth-child(2) > h2 {
+      font-size: 1em;
+      width: 15em;
+    }
+
+    .backstage > div > div:nth-child(2) > h4 {
+      font-size: 0.8em;
+      width: 10em;
+    }
+
+    .backstage > div > div:nth-child(2) > p {
+      font-size: 0.6em;
+      width: 25em;
+    }
+
+    .backstage-flower {
+      width: 3.5em;
+      top: 1.5em;
+    }
+
+    /* Pets */
+    .choose-favorite-btn {
+      padding: 0.85em 2.5em;
+      font-size: 0.5em;
+    }
+
+    .pets-flower-1 {
+      width: 5em;
+    }
+
+    .pets-flower-2 {
+      width: 9em;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .feed-friend-btn {
+      padding: 0.85em 2.5em;
+      font-size: 0.5em;
+    }
+
+    /* Testimonials Block */
+    .testimonial-btn {
+      padding: 0.85em 2.5em;
+      font-size: 0.5em;
+    }
+
+    .profile-description > p {
+      font-size: 2vw;
+    }
+  }
+}

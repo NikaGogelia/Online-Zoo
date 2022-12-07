@@ -1,0 +1,882 @@
+/* Donate Image Div */
+.donate-image-div {
+  background-image: url("../../assets/images/panda.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Pick And Feed A Friend Block */
+.pick-and-feed {
+  background: var(--orangeGradient);
+  color: var(--white);
+}
+
+.pick-and-feed > h3:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.pick-and-feed > h3:nth-of-type(2),
+.pick-and-feed-friend-div > h2 {
+  background: var(--orange-dark-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+
+.pick-and-feed-friend-div {
+  background: var(--frostedGlassWhite);
+  border-radius: 20px;
+}
+
+.pick-and-feed-friend-div > h2 {
+  text-align: center;
+}
+
+.pick-and-feed-friend-div > p {
+  color: var(--darkBlue);
+  font-weight: 400;
+}
+
+.feed-friend-dashboard,
+.choose-panda-quantity,
+.panda-diet,
+.feed-friend-form {
+  display: flex;
+}
+
+.feed-friend-dashboard {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-panda-quantity {
+  justify-content: center;
+  align-items: center;
+}
+
+.panda-diet {
+  text-align: center;
+  color: var(--dark);
+}
+
+.panda-diet > div > h3 {
+  font-weight: 500;
+}
+
+.donation-amount {
+  color: var(--dark);
+  font-weight: 400;
+}
+
+.donation-amount > p:last-of-type {
+  text-align: center;
+}
+
+.feed-friend-form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  transition: 0.5s;
+}
+
+input[type="number"]:active,
+input[type="number"]:focus {
+  outline: none;
+  border: 1px solid var(--green) !important;
+}
+
+input[type="number"]:active::placeholder,
+input[type="number"]:focus::placeholder {
+  color: var(--green);
+}
+
+input[type="number"]::placeholder {
+  color: var(--gray);
+}
+
+.feed-friend-form > div,
+.feed-friend-form > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  border-radius: 100%;
+  outline: none;
+  border: 2px solid var(--orange);
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked:before {
+  background-color: var(--green);
+}
+
+input[type="radio"]:checked {
+  border-color: var(--green);
+}
+
+/* Timeline Component */
+.donation-amount {
+  width: 100%;
+}
+
+.timeline-container {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0 5em 0;
+}
+
+.amount {
+  color: var(--darkBlue);
+  position: absolute;
+  top: 2em;
+  left: -1em;
+  font-size: 1.2em;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1.1em;
+  padding: 0.5em 0;
+  background-color: var(--darkBlue);
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.timeline--inner {
+  width: 90%;
+  position: absolute;
+  display: block;
+  top: 50%;
+  height: 2px;
+  margin: 0 auto;
+  border: 0;
+  background: #72828e;
+  border-radius: 1em;
+  z-index: 1;
+}
+
+.timeline--inner-pin {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: var(--yellow);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.timeline--inner-pin:nth-of-type(2) .timeline-border,
+.timeline--inner-pin:nth-of-type(2) .timeline-border::before {
+  display: block;
+}
+
+.timeline--inner-pin:nth-of-type(2) .amount {
+  color: var(--orange);
+}
+
+.timeline-border,
+.timeline-border::before {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 2px solid var(--orange);
+  border-radius: 100%;
+}
+
+.timeline-border {
+  width: 2em;
+  height: 2em;
+}
+
+.timeline-border::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+}
+
+.timeline--inner-pin:nth-of-type(1) {
+  left: -10%;
+}
+
+.timeline--inner-pin:nth-of-type(1) {
+  left: 0%;
+}
+
+.timeline--inner-pin:nth-of-type(2) {
+  left: 16.7%;
+}
+
+.timeline--inner-pin:nth-of-type(3) {
+  left: 33.4%;
+}
+
+.timeline--inner-pin:nth-of-type(4) {
+  left: 50.1%;
+}
+
+.timeline--inner-pin:nth-of-type(5) {
+  left: 66.8%;
+}
+
+.timeline--inner-pin:nth-of-type(6) {
+  left: 83.5%;
+}
+
+.timeline--inner-pin:nth-of-type(7) {
+  left: 99%;
+}
+
+/* Styles For Desktop Size */
+@media only screen and (min-width: 1024px) {
+  /* Page Padding */
+  .pick-and-feed {
+    padding: 3em 20em;
+  }
+
+  .navbar {
+    padding: 0.5em 20em;
+  }
+
+  footer {
+    padding: 2em 20em;
+  }
+
+  /* Donate Image Div */
+  .donate-image-div {
+    height: 28em;
+    width: 100%;
+  }
+
+  /* Pick And Feed A Friend Block */
+  .pick-and-feed > h3 {
+    font-size: 2.1em;
+    margin-bottom: 0.8em;
+  }
+
+  .pick-and-feed > p {
+    font-size: 1.1em;
+    line-height: 22.5px;
+  }
+
+  .pick-and-feed-friend-div {
+    padding: 3em 6.5em;
+  }
+
+  .pick-and-feed-friend-div > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.8em;
+  }
+
+  .pick-and-feed-friend-div > p {
+    font-size: 1.4em;
+  }
+
+  .choose-panda-quantity > * {
+    margin: 0 1.5em;
+  }
+
+  .panda-diet > * {
+    margin: 0 0.5em;
+  }
+
+  .panda-diet > div > h3 {
+    font-size: 4em;
+    margin: 0;
+  }
+
+  .panda-diet > div > p {
+    margin: 0;
+  }
+
+  .feed-friend-form {
+    margin-top: 2em;
+  }
+
+  .feed-friend-form > * {
+    margin-bottom: 1em;
+  }
+
+  input[type="number"] {
+    padding: 0.8em 0.3em;
+  }
+
+  .feed-friend-form > div > * {
+    margin: 0.8em 1.1em;
+  }
+
+  .feed-friend-form > div > div > * {
+    margin: 0 0.3em;
+  }
+
+  input[type="radio"] {
+    width: 1em;
+    height: 1em;
+  }
+
+  .feed-friend-dashboard-btn {
+    border-radius: 2em;
+    padding: 1em 4em;
+    font-size: 1em;
+  }
+
+  /* Desktop Screen Width Below 1760px */
+  @media only screen and (max-width: 1760px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 5em 15em;
+    }
+
+    .navbar {
+      padding: 0.5em 15em;
+    }
+
+    footer {
+      padding: 2em 15em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1560px */
+  @media only screen and (max-width: 1560px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 5em 12em;
+    }
+
+    .navbar {
+      padding: 0.5em 12em;
+    }
+
+    footer {
+      padding: 2em 12em;
+    }
+  }
+
+  @media only screen and (max-width: 1430px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 5em 10em;
+    }
+
+    .navbar {
+      padding: 0.5em 10em;
+    }
+
+    footer {
+      padding: 1.8em 10em;
+    }
+  }
+
+  /* Desktop Screen Width Below 1116px */
+  @media only screen and (max-width: 1116px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 4em 7em;
+    }
+
+    .navbar {
+      padding: 0.5em 7em;
+    }
+
+    footer {
+      padding: 1.8em 7em;
+    }
+  }
+}
+
+/* Styles For Tablet Screen Size */
+@media only screen and (max-width: 1024px) {
+  /* Page Padding */
+  .pick-and-feed {
+    padding: 3em 4em;
+  }
+
+  .navbar {
+    padding: 0.5em 4em;
+  }
+
+  footer {
+    padding: 1.8em 4em;
+  }
+
+  /* Donate Image Div */
+  .donate-image-div {
+    height: 28em;
+    width: 100%;
+  }
+
+  /* Pick And Feed A Friend Block */
+  .pick-and-feed > h3 {
+    font-size: 2.1em;
+    margin-bottom: 0.8em;
+  }
+
+  .pick-and-feed > p {
+    font-size: 1.1em;
+    line-height: 22.5px;
+  }
+
+  .pick-and-feed-friend-div {
+    padding: 3em 6.5em;
+  }
+
+  .pick-and-feed-friend-div > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.8em;
+  }
+
+  .pick-and-feed-friend-div > p {
+    font-size: 1.4em;
+  }
+
+  .choose-panda-quantity > * {
+    margin: 0 1.5em;
+  }
+
+  .panda-diet > * {
+    margin: 0 0.5em;
+  }
+
+  .panda-diet > div > h3 {
+    font-size: 4em;
+    margin: 0;
+  }
+
+  .panda-diet > div > p {
+    margin: 0;
+  }
+
+  .feed-friend-form {
+    margin-top: 2em;
+  }
+
+  .feed-friend-form > * {
+    margin-bottom: 1em;
+  }
+
+  input[type="number"] {
+    padding: 0.8em 0.3em;
+  }
+
+  .feed-friend-form > div > * {
+    margin: 0.8em 1.1em;
+  }
+
+  .feed-friend-form > div > div > * {
+    margin: 0 0.3em;
+  }
+
+  input[type="radio"] {
+    width: 1em;
+    height: 1em;
+  }
+
+  .feed-friend-dashboard-btn {
+    border-radius: 2em;
+    padding: 1em 4em;
+    font-size: 1em;
+  }
+
+  /* Tablet Screen Width Below 1000px */
+  @media only screen and (max-width: 1000px) {
+    /* Pick And Feed A Friend Block */
+    .pick-and-feed > h3 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .pick-and-feed > p {
+      font-size: 1em;
+      line-height: 20px;
+    }
+
+    .pick-and-feed-friend-div {
+      padding: 3em 6em;
+    }
+
+    .pick-and-feed-friend-div > h2 {
+      font-size: 1.8em;
+    }
+
+    .pick-and-feed-friend-div > p {
+      font-size: 1.1em;
+    }
+  }
+
+  /* Tablet Screen Width Below 800px */
+  @media only screen and (max-width: 800px) {
+    .pick-and-feed {
+      padding: 3em 2em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    footer {
+      padding: 1.8em 2em;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .pick-and-feed > h3 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+
+    .pick-and-feed > p {
+      font-size: 0.9em;
+      line-height: 20px;
+    }
+
+    .pick-and-feed-friend-div {
+      padding: 3em 5em;
+    }
+
+    .pick-and-feed-friend-div > h2 {
+      font-size: 1.5em;
+    }
+
+    .pick-and-feed-friend-div > p {
+      font-size: 1em;
+    }
+
+    .panda-diet > div > h3 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .panda-diet > div > p {
+      font-size: 0.9em;
+    }
+
+    .choose-panda-quantity > img {
+      width: 10em;
+    }
+
+    .feed-friend-dashboard-btn {
+      border-radius: 2em;
+      padding: 1em 4em;
+      font-size: 0.85em;
+    }
+  }
+
+  /* Tablet Screen Width Below 730px */
+  @media only screen and (max-width: 730px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 3em 2em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    footer {
+      padding: 1.8em 2em;
+    }
+  }
+
+  /* Tablet Screen Width Below 680px */
+  @media only screen and (max-width: 680px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 2em 2em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    footer {
+      padding: 1.5em 2em;
+    }
+
+    .open-burger-list {
+      padding: 1em 2em;
+    }
+
+    /* Donate Image Div */
+    .donate-image-div {
+      height: 20em;
+    }
+
+    /* Timeline Component */
+    .amount {
+      font-size: 1em;
+    }
+
+    .timeline--inner-pin {
+      width: 8px;
+      height: 8px;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .pick-and-feed-friend-div {
+      padding: 2em;
+    }
+
+    input[type="number"] {
+      padding: 0.5em 0.3em;
+      font-size: 0.9em;
+    }
+
+    .feed-friend-form > div > * {
+      margin: 0.5em;
+    }
+
+    input[type="radio"] {
+      width: 0.9em;
+      height: 0.9em;
+    }
+  }
+
+  /* Tablet Screen Width Below 600px */
+  @media only screen and (max-width: 600px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 2em 1em;
+    }
+
+    .navbar {
+      padding: 0.5em 2em;
+    }
+
+    footer {
+      padding: 1.5em 2em;
+    }
+
+    .open-burger-list {
+      padding: 1em 2em;
+    }
+  }
+
+  /* Tablet Screen Width Below 505px */
+  @media only screen and (max-width: 505px) {
+    /* Page Padding */
+    .pick-and-feed {
+      padding: 2em 1em;
+    }
+
+    .navbar {
+      padding: 0.5em 1em;
+    }
+
+    footer {
+      padding: 1.3em 1em;
+    }
+
+    .open-burger-list {
+      padding: 1em;
+    }
+
+    /* Pick And Feed A Friend Block */
+    .pick-and-feed {
+      text-align: center;
+    }
+
+    .pick-and-feed > h3 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+
+    .pick-and-feed > p {
+      font-size: 0.8em;
+      line-height: 20px;
+    }
+
+    .pick-and-feed-friend-div {
+      padding: 1em;
+    }
+
+    .pick-and-feed-friend-div > h2 {
+      font-size: 1.2em;
+    }
+
+    .pick-and-feed-friend-div > p {
+      font-size: 0.9em;
+    }
+
+    .panda-diet > div > h3 {
+      font-size: 2.1em;
+      margin: 0;
+    }
+
+    .panda-diet > div > p {
+      font-size: 0.6em;
+    }
+
+    .panda-diet > img {
+      width: 0.7em !important;
+    }
+
+    .choose-panda-quantity > img {
+      width: 10em;
+    }
+
+    .feed-friend-dashboard-btn {
+      border-radius: 2em;
+      padding: 1em 4em;
+      font-size: 0.85em;
+    }
+
+    .feed-friend-dashboard-btn {
+      font-size: 0.75em;
+    }
+
+    /* Timeline Component */
+    .timeline {
+      height: 1em;
+    }
+
+    .timeline--inner-pin {
+      height: 7px;
+      width: 7px;
+    }
+
+    .timeline-border {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    .timeline-border::before {
+      content: "";
+      width: 0.8em;
+      height: 0.8em;
+    }
+
+    .amount {
+      font-size: 0.8em;
+    }
+  }
+}
+
+/* Styles For Mobile Screen Size */
+@media only screen and (max-width: 425px) {
+  /* Page Padding */
+  .pick-and-feed {
+    padding: 1em;
+  }
+
+  .navbar {
+    padding: 0.5em 2em;
+  }
+
+  footer {
+    padding: 1.5em 1em;
+  }
+
+  .open-burger-list {
+    padding: 1em;
+  }
+
+  /* Pick And Feed A Friend Block */
+  .pick-and-feed {
+    text-align: center;
+  }
+
+  .pick-and-feed > h3 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .pick-and-feed > p {
+    font-size: 0.7em;
+    line-height: 20px;
+  }
+
+  .pick-and-feed-friend-div {
+    padding: 1em;
+  }
+
+  .pick-and-feed-friend-div > h2 {
+    font-size: 1.1em;
+  }
+
+  .pick-and-feed-friend-div > p {
+    font-size: 0.8em;
+  }
+
+  .panda-diet > div > h3 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .panda-diet > div > p {
+    font-size: 0.55em;
+  }
+
+  .panda-diet > img {
+    width: 0.6em !important;
+  }
+
+  .choose-panda-quantity > img {
+    width: 4em;
+  }
+
+  .feed-friend-dashboard-btn {
+    font-size: 0.6em;
+  }
+
+  /* Timeline Component */
+  .timeline {
+    height: 1em;
+  }
+
+  .timeline--inner-pin {
+    height: 5.5px;
+    width: 5.5px;
+  }
+
+  .timeline-border {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  .timeline-border::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  .amount {
+    font-size: 0.7em;
+  }
+}
