@@ -280,7 +280,7 @@ input[range] {
   width: 7em;
   height: 0.7vh;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: e-resize;
 }
 
 .slider::-moz-range-thumb {
@@ -289,12 +289,6 @@ input[range] {
   width: 7em;
   height: 0.7vh;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-.slider::-webkit-slider-thumb:active,
-.slider::-webkit-slider-thumb:focus {
-  cursor: all-scroll;
 }
 
 /* Modal */
