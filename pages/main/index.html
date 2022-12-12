@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../assets/styles/index.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body id="main">
+  <body id="main" scroll="no">
     <header>
       <nav class="navbar">
         <div class="navigation">
@@ -64,6 +64,7 @@
       </ul>
     </div>
     <main>
+      <div class="dark-back"></div>
       <div class="watch-your-favorite-animal">
         <div class="bubble"></div>
         <div class="watch-fav-animal-header">
@@ -102,95 +103,19 @@
       </div>
       <div class="pets">
         <div class="pets-card-slide">
-          <button class="prev-next-button pet-prev-next-button">
+          <button id="prev" class="prev-next-button pet-prev-next-button">
             <img
               src="../../assets/icons/arrow-button-prev.svg"
               alt="prev-icon"
             />
           </button>
-          <button class="prev-next-button pet-prev-next-button">
+          <button id="next" class="prev-next-button pet-prev-next-button">
             <img
               src="../../assets/icons/arrow-button-next.svg"
               alt="next-icon"
             />
           </button>
-          <div class="pet-cards">
-            <div class="pet-card">
-              <img
-                src="../../assets/images/giant-pandas.jpg"
-                alt="giant-pandas"
-              />
-              <div class="pet-card-desc">
-                <div>
-                  <h4>giant pandas</h4>
-                  <p>native to southwest china</p>
-                </div>
-                <img
-                  src="../../assets/icons/banana-bamboo.svg"
-                  alt="banana-bamboo"
-                />
-              </div>
-            </div>
-            <div class="pet-card">
-              <img src="../../assets/images/eagles.png" alt="eagles" />
-              <div class="pet-card-desc">
-                <div>
-                  <h4>eagles</h4>
-                  <p>native to south america</p>
-                </div>
-                <img src="../../assets/icons/meet-fish.svg" alt="meet-fish" />
-              </div>
-            </div>
-            <div class="pet-card">
-              <img src="../../assets/images/gorillas.png" alt="gorillas" />
-              <div class="pet-card-desc">
-                <div>
-                  <h4>gorillas</h4>
-                  <p>native to congo</p>
-                </div>
-                <img
-                  src="../../assets/icons/banana-bamboo.svg"
-                  alt="banana-bamboo"
-                />
-              </div>
-            </div>
-            <div class="pet-card">
-              <img
-                src="../../assets/images/two-toed-sloth.png"
-                alt="two-toed-sloth"
-              />
-              <div class="pet-card-desc">
-                <div>
-                  <h4>two-toed-sloth</h4>
-                  <p>mesoamerica, south america</p>
-                </div>
-                <img
-                  src="../../assets/icons/banana-bamboo.svg"
-                  alt="banana-bamboo"
-                />
-              </div>
-            </div>
-            <div class="pet-card">
-              <img src="../../assets/images/cheetahs.png" alt="cheetahs" />
-              <div class="pet-card-desc">
-                <div>
-                  <h4>cheetahs</h4>
-                  <p>native to africa</p>
-                </div>
-                <img src="../../assets/icons/meet-fish.svg" alt="meet-fish" />
-              </div>
-            </div>
-            <div class="pet-card">
-              <img src="../../assets/images/penguins.png" alt="penguins" />
-              <div class="pet-card-desc">
-                <div>
-                  <h4>penguins</h4>
-                  <p>native to antarctica</p>
-                </div>
-                <img src="../../assets/icons/meet-fish.svg" alt="meet-fish" />
-              </div>
-            </div>
-          </div>
+          <div class="pet-cards"></div>
         </div>
         <button class="button choose-favorite-btn">choose your favorite</button>
         <img
@@ -263,112 +188,18 @@
       </div>
       <div class="testimonials">
         <h3>testimonials</h3>
-        <div class="testimonial-profiles">
-          <div class="testimonial-profile">
-            <div>
-              <div class="profile-header">
-                <img
-                  src="../../assets/icons/no-profile.svg"
-                  alt="no-profile-icon"
-                />
-                <div>
-                  <h4>Michael John</h4>
-                  <h5>Local Austria • Today</h5>
-                </div>
-              </div>
-              <div class="profile-description">
-                <p>
-                  The best online zoo I’ve met. My son delighted very much ljves
-                  to watch gouillas. Online zoo is one jf the ways to instill a
-                  love for animals.The best online zoo I’ve met. My son
-                  delighted very much ljves to watch gouillas. Online zoo is one
-                  jf the ways to instill a love for animals. The best online zoo
-                  I’ve met. My son delighted very much ljves to watch gouillas.
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-profile">
-            <div>
-              <div class="profile-header">
-                <img src="../../assets/images/profile-1.png" alt="profile-1" />
-                <div>
-                  <h4>Oskar Samborsky</h4>
-                  <h5>Local Austria • Yesterday</h5>
-                </div>
-              </div>
-              <div class="profile-description">
-                <p>
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas. The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-profile">
-            <div>
-              <div class="profile-header">
-                <img src="../../assets/images/profile-2.png" alt="profile-2" />
-                <div>
-                  <h4>Fredericka Michelin</h4>
-                  <h5>Local Austria • Yesterday</h5>
-                </div>
-              </div>
-              <div class="profile-description">
-                <p>
-                  The best online zoo I’ve met. My son delighted very much ljves
-                  to watch gouillas. Online zoo is one jf the ways to instill a
-                  love for animals.The best online zoo I’ve met. My son
-                  delighted very much ljves to watch gouillas. Online zoo is one
-                  jf the ways to instill a love for animals. The best online zoo
-                  I’ve met. My son delighted very much ljves to watch gouillas.
-                  Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. The best online zoo I’ve
-                  met. My son delighted very much ljves to
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-profile">
-            <div>
-              <div class="profile-header">
-                <img src="../../assets/images/profile-3.png" alt="profile-3" />
-                <div>
-                  <h4>Mila Riksha</h4>
-                  <h5>Local Austria • Yesterday</h5>
-                </div>
-              </div>
-              <div class="profile-description">
-                <p>
-                  My son delighted very much ljves to watch gouillas. Online zoo
-                  is one jf the ways to instill a love for animals.The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf the ways to instill a love for
-                  animals.The best online zoo I’ve met. My son delighted very
-                  much ljves to watch gouillas. Online zoo is one jf the ways to
-                  instill a love for animals.The best online zoo I’ve met. My
-                  son delighted very much ljves to watch gouillas. The best
-                  online zoo I’ve met. My son delighted very much ljves to watch
-                  gouillas. Online zoo is one jf
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-profiles"></div>
         </div>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <input
+            class="slider"
+            type="range"
+            min="0"
+            max="7"
+            step="1"
+            value="0"
+          />
         </div>
         <button class="button testimonial-btn">leave feedback</button>
         <img
@@ -376,6 +207,9 @@
           src="../../assets/images/flower-4.png"
           alt="flower-4"
         />
+      </div>
+      <div class="modal">
+        <div class="modal-content"></div>
       </div>
     </main>
     <footer>
@@ -442,6 +276,6 @@
 
     <!-- Scripts -->
     <script src="../index.js"></script>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

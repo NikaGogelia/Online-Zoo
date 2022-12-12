@@ -73,11 +73,25 @@
 
 .pet-cards {
   display: grid;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.slide-left {
+  transform: translateX(-1%);
+  opacity: 0.1;
+}
+
+.slide-right {
+  transform: translateX(1%);
+  opacity: 0.1;
 }
 
 .pet-card {
   border-radius: 5px;
-  border: 2px solid var(--orange);
+  border: 1px solid var(--orange);
   background-color: var(--white);
   color: var(--black);
   cursor: pointer;
@@ -186,8 +200,18 @@
   color: var(--darkBlue);
 }
 
+.testimonials-slider {
+  overflow: hidden;
+}
+
+input[range] {
+  transition: 0.2s;
+}
+
 .testimonial-profiles {
   display: grid;
+  position: relative;
+  transition: 0.5s;
 }
 
 .testimonial-profile {
@@ -229,21 +253,68 @@
 }
 
 .progress-bar {
-  background-color: var(--lightGray);
-  border: 1px solid var(--orange);
-  width: 50%;
-  height: 6px;
-  border-radius: 5px;
-  margin: auto;
+  width: 60%;
 }
 
-.progress {
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.7vh;
+  border-radius: 5px;
+  border: 1px solid var(--orange);
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider:hover {
+  opacity: 0.8;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
   border: none;
   background-color: var(--orange);
-  width: 20%;
-  height: 100%;
+  width: 7em;
+  height: 0.7vh;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  border: none;
+  background-color: var(--orange);
+  width: 7em;
+  height: 0.7vh;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb:active,
+.slider::-webkit-slider-thumb:focus {
+  cursor: all-scroll;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000062;
+  z-index: -3;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.modal,
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Styles For Desktop Screen Size */
@@ -310,7 +381,7 @@
   }
 
   .backstage > div > div:nth-child(1) > img {
-    width: 33em;
+    width: 90%;
     height: 23em;
   }
 
@@ -446,8 +517,12 @@
   }
 
   /* Testimonials Block */
+  .testimonials-slider {
+    width: 75em;
+  }
+
   .testimonial-profiles {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
@@ -608,10 +683,15 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 67em;
+    }
+
     .testimonial-profile {
       width: 16em;
       height: 23em;
     }
+
     .profile-description > p {
       font-size: 0.88em;
     }
@@ -755,6 +835,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 63em;
+    }
+
     .testimonials > h3 {
       font-size: 1.9em;
     }
@@ -815,6 +899,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 59em;
+    }
+
     .testimonials > h3 {
       font-size: 1.8em;
     }
@@ -958,6 +1046,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 55em;
+    }
+
     .testimonials > h3 {
       font-size: 1.8em;
     }
@@ -1211,8 +1303,12 @@
   }
 
   /* Testimonials Block */
+  .testimonials-slider {
+    width: 48em;
+  }
+
   .testimonial-profiles {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
@@ -1220,10 +1316,6 @@
 
   .testimonials > h3 {
     font-size: 1.5em;
-  }
-
-  .testimonial-profile:nth-of-type(1) {
-    display: none;
   }
 
   .testimonial-profile {
@@ -1259,7 +1351,6 @@
 
   .progress-bar {
     margin-top: 1em;
-    height: 5px;
   }
 
   .testimonial-btn {
@@ -1332,6 +1423,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 32em;
+    }
+
     .testimonial-flower {
       width: 8.5em;
       bottom: -4em;
@@ -1394,6 +1489,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 29.5em;
+    }
+
     .testimonial-profile {
       width: 14em;
       height: 20em;
@@ -1542,6 +1641,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 25.5em;
+    }
+
     .testimonial-profile {
       width: 12em;
       height: 17em;
@@ -1659,11 +1762,6 @@
     .pet-card {
       width: 13em;
       border-width: 1px;
-    }
-
-    .pet-card:nth-of-type(3),
-    .pet-card:nth-of-type(4) {
-      display: none;
     }
 
     .pet-card:hover > img {
@@ -1795,6 +1893,10 @@
     }
 
     /* Testimonials Block */
+    .testimonials-slider {
+      width: 100%;
+    }
+
     .testimonial-profiles {
       display: flex;
       flex-direction: column;
@@ -1806,13 +1908,9 @@
       font-size: 1.3em;
     }
 
-    .testimonial-profile:nth-of-type(1) {
-      display: none;
-    }
-
     .testimonial-profile {
       width: 100%;
-      height: 7.7em;
+      height: 7em;
       margin-bottom: 0.5em;
     }
 
@@ -1826,7 +1924,7 @@
     }
 
     .profile-description > p {
-      font-size: 1.5vw;
+      font-size: 1.45vw;
     }
 
     .profile-header {
@@ -1862,6 +1960,56 @@
       width: 8em;
       right: 0;
       bottom: -3em;
+    }
+
+    /* Modal */
+    .open-modal {
+      opacity: 1;
+      z-index: 5;
+    }
+
+    .modal-profile {
+      width: 70% !important;
+      height: auto !important;
+    }
+
+    .modal-profile .profile-header {
+      justify-content: space-between;
+    }
+
+    .modal-profile > div {
+      padding: 0.6em 1em;
+    }
+
+    .modal-profile .profile-header > div img {
+      font-size: 1.3em;
+      margin-right: 0.5em;
+    }
+
+    .modal-profile .profile-header > img {
+      width: 0.9em;
+    }
+
+    .modal-profile .profile-header > div {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .modal-profile .profile-header > div > div > * {
+      margin: 0.1em;
+      font-size: 0.8em;
+    }
+
+    .modal-profile .profile-description {
+      display: flex;
+      justify-content: center;
+    }
+
+    .modal-profile .profile-description > p {
+      font-size: 1em !important;
+      line-height: 1.5 !important;
+      text-align: justify;
     }
 
     /* Tablet Screen Width Below 600px */
@@ -2127,10 +2275,6 @@
         font-size: 1em;
       }
 
-      .testimonial-profile:nth-of-type(1) {
-        display: none;
-      }
-
       .testimonial-profile {
         width: 100%;
         height: 6.5em;
@@ -2179,6 +2323,29 @@
         width: 5em;
         right: 0;
         bottom: -2.5em;
+      }
+
+      /* Modal */
+      .modal-profile > div {
+        padding: 0.5em 0.9em;
+      }
+
+      .modal-profile .profile-header > div img {
+        font-size: 1.1em;
+        margin-right: 0.4em;
+      }
+
+      .modal-profile .profile-header > img {
+        width: 0.75em;
+      }
+
+      .modal-profile .profile-header > div > div > * {
+        margin: 0.1em;
+        font-size: 0.75em;
+      }
+
+      .modal-profile .profile-description > p {
+        font-size: 0.85em !important;
       }
     }
   }
@@ -2291,11 +2458,6 @@
   .pet-card {
     width: 15em;
     border-width: 1px;
-  }
-
-  .pet-card:nth-of-type(3),
-  .pet-card:nth-of-type(4) {
-    display: none;
   }
 
   .pet-card:hover > img {
@@ -2427,10 +2589,6 @@
     font-size: 1em;
   }
 
-  .testimonial-profile:nth-of-type(1) {
-    display: none;
-  }
-
   .testimonial-profile {
     width: 100%;
     height: 6em;
@@ -2555,6 +2713,12 @@
 
     .profile-description > p {
       font-size: 2vw;
+    }
+
+    /* Modal */
+    .modal-profile {
+      width: 80% !important;
+      height: auto !important;
     }
   }
 }

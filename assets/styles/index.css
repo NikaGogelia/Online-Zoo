@@ -73,13 +73,32 @@
 
   --frostedGlassWhite: rgba(253, 253, 255, 0.52);
 
-  --white: #fff;
+  --white: #fff8f1;
 }
 
 /* Global Styles */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--orange);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eb9544;
 }
 
 h1 {
@@ -102,6 +121,10 @@ a {
 
 button {
   font-weight: 500;
+}
+
+main {
+  position: relative;
 }
 
 /* Navbar */
@@ -174,7 +197,6 @@ header {
   background-color: var(--white);
   height: 0;
   padding: 0;
-  z-index: -1;
   opacity: 0;
   transition: 0.5s;
 }
@@ -189,6 +211,23 @@ header {
 
 .burger-list > ul > li > a {
   color: var(--dark);
+}
+
+.dark-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.active-back {
+  z-index: 6;
+  opacity: 1;
 }
 
 /* Footer */
