@@ -5,13 +5,9 @@ Online-zoo is a platform that contains information about animals from various zo
 
 **Website Was Built By: Html, CSS, Javascript**
 
----
-
 ## About Page Design
 
 ![About Page](/assets/desktop_petstory.png)
-
----
 
 ## Donate Page Design
 
